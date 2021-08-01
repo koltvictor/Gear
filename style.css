@@ -1,3 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+#header {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    height: 50px;
+    line-height: 50px;
+}
+
+#header2 {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    color: lightgrey;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    position: relative;
+    left: 10;
+    font-size: 20px;
+    font: weight 01px;;
+    padding-left: 10px;
+    padding-top: -5px;
+}
+
+#header-title:hover {
+    color: darkslategrey;
+}
+
+#header-title {
+    color: seashell;
+    display: block;
+    float: left;
+    position: absolute;
+    left: 10px;
+    line-height: normal;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#header-nav a:hover {
+    text-decoration: overline underline;
+    text-decoration-color: whitesmoke;
+    color:darkslategrey;
+  }
+  
+  #header-nav a::before {
+    color: darkslategrey;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  #header-nav a:hover::before {
+    color: darkslategrey;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  #header-nav {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 5in;
+    word-spacing: 15px;
+    margin-top: 0;
+    padding-right: 5px;
+  }
+
 body {
-    background: cyan;
+    background-image: url('carbon-fibre-big-1920x1080.png');
+    color: black;
+    font-family: 'Notable', sans-serif;
+    position: relative;
+    padding-bottom: 399px;
+    min-height: 100vh;
+}
+
+#kolt {
+    width: 325px;
+    height: 475px;
+    vertical-align: middle;
+    transition: transform 1s;
+    position: absolute;
+    right:2cm;
+}
+
+#kolt:hover {
+    transform: rotate(180deg);
+}
+
+#firsttext {
+    color: ivory;
+    position: relative;
+    left: 10cm;
+    font-size: 35px;
+    text-shadow: 3px 4px #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#secondtext {
+    color:rgb(57, 140, 223);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 3px 4px #000;
+    line-height: 1cm;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    text-align: justify;
+}
+
+#secondtext {
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    background-color: black;
+    height: 180px;
+    width: 500px;
+    padding: 10px;
+}
+
+#marquee {
+    color:seashell;
+    font-size: 25px;
+    position: absolute;
+    bottom: 2cm;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#abouthead {
+    color:aliceblue;    
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+#contacthead {
+    color:antiquewhite;
+    font-size: 40px;
+}
+
+#bkbridge {
+    position: absolute;
+    left:5in;
+    top:3in;
+}
+
+#mail {
+    color:azure;
+}
+
+#mail:link{
+    color:white;
+}
+
+#mail:visited{
+    color:lightskyblue;
+}
+
+#mail:hover{
+    color:hotpink;
+}
+
+#mail:active {
+    color:ivory;
+}
+
+#homelink {
+    color:azure;
+}
+
+#homelink:link{
+    color:white;
+}
+
+#homelink:visited{
+    color:lightskyblue;
+}
+
+#homelink:hover{
+    color:hotpink;
+}
+
+#homelink:active {
+    color:ivory;
+}
+
+#aboutlink {
+    color:azure;
+}
+
+#aboutlink:link{
+    color:white;
+}
+
+#aboutlink:visited{
+    color:lightskyblue;
+}
+
+#aboutlink:hover{
+    color:hotpink;
+}
+
+#aboutlink:active {
+    color:ivory;
+}
+
+#contactlink {
+    color:azure;
+}
+
+#contactlink:link{
+    color:white;
+}
+
+#contactlink:visited{
+    color:lightskyblue;
+}
+
+#contactlink:hover{
+    color:hotpink;
+}
+
+#contactlink:active {
+    color:ivory;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+#abouttext {
+    color: lightskyblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 1cm;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    background-color: black;
+    height: 205px;
+    width: 500px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
